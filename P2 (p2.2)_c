@@ -1,0 +1,97 @@
+
+#include <stdio.h>
+int main()
+{
+    int PPS;
+    int BEE;
+    int MATHS;
+    int FAI;
+    int ETC;
+    int TOTAL;
+    float PER;
+    printf ("\n-----student marksheet");
+    
+    printf("\n enter the marks of PPS");
+    scanf("%d",&PPS);
+    while(PPS<0 || PPS>100);
+    {
+        printf ("enter valid marks [0-100]");
+        scanf("%d",&PPS);
+    }
+    
+    printf("\n enter the marks of BEE");
+    scanf("%d",&BEE);
+    while(BEE<0 || BEE>100);
+    {
+        printf ("enter valid marks  [  [0-100]");
+        scanf("%d",&BEE);
+    }
+    
+    printf("\n enter the marks of MATHS");
+    scanf("%d",&MATHS);
+    while(MATHS<0 || MATHS>100);
+    {
+        printf ("enter valid marks  [0-100]");
+        scanf("%d",&MATHS);
+    }
+    
+    printf("\n enter the marks of FAI");
+    scanf("%d",&FAI);
+    while(FAI<0 || FAI>100);
+    {
+        printf ("enter valid marks   [0-100]");
+        scanf("%d",&FAI);
+    }
+    
+    printf("\n enter the marks of ETC");
+    scanf("%d",&ETC);
+    while(ETC<0 || ETC>100);
+    {
+        printf ("enter valid marks  [0-100] ");
+        scanf("%d",&ETC);
+    }
+    
+     TOTAL=PPS+BEE+MATHS+FAI+ETC;
+printf("\n TOTAL=%d",TOTAL);
+PER=TOTAL*100/500;
+printf("\n PER=%f",PER);
+
+
+if (PER>=90)
+{
+    printf ("Grade A \n");
+}
+
+
+else if (PER>=75)
+{
+    printf ("Grade B \n");
+}
+
+else if (PER>=60)
+{
+    printf ("Grade C\n");
+}
+
+else if (PER>=40)
+{
+    printf ("Grade D \n");
+}
+
+else if (PER<40)
+{
+    printf ("fail \n");
+}
+
+return 0;
+}
+
+
+
+
+
+
+
+
+
+    
